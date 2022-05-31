@@ -11,7 +11,7 @@ inputs:
     default: ""
 runs:
   using: "docker"
-  image: "docker://sosin/ativ-solana-dev"
+  image: "docker://sosin/ativ-solana-dev:0.24.2"
   entrypoint: shell-exec
   args:
     - "anchor build ${{ inputs.args }}"
