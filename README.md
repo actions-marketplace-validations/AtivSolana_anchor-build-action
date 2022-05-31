@@ -10,7 +10,7 @@ build:
   steps:
     - uses: actions/checkout@v2
     - name: Anchor Build
-      uses: AtivSolana/anchor-build-action@v0.24.2
+      uses: AtivSolana/anchor-build-action@v0.24.2:a
       with:
         args: <custom build args>
 ```
