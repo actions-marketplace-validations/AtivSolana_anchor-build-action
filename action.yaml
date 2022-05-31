@@ -1,17 +1,17 @@
-name: 'Solana Anchor Build'
-author: 'MRGN Labs'
-description: 'Build a Solana program with Anchor'
+name: "Solana Anchor Build"
+author: "ATIV sosin"
+description: "Build a Solana program with Anchor"
 branding:
   icon: anchor
   color: red
 inputs:
   args:
-    description: 'anchor build arguments'
+    description: "anchor build arguments"
     required: false
-    default: ''
+    default: ""
 runs:
-  using: 'docker'
-  image: 'docker://mrgnlabs/solana-dev:0.0.2-alpha'
+  using: "docker"
+  image: "docker://sosin/ativ-solana-dev"
   entrypoint: shell-exec
-  args: 
-    - 'anchor build ${{ inputs.args }}'
+  args:
+    - "anchor build ${{ inputs.args }}"
